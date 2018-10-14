@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotesController: UITableViewController {
+class NotebookController: UITableViewController {
     
     var items = ["Learn Today", "Milena's 50th birthday"]
 
@@ -32,7 +32,7 @@ class NotesController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
-        let item = items[indexPath.row]
+        
         cell.textLabel?.text = items[indexPath.row]
         
         return cell

@@ -5,13 +5,14 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Notes-->
         <scene sceneID="f13-om-nvc">
             <objects>
-                <tableViewController storyboardIdentifier="NotesController" id="lGh-bW-bCa" customClass="NotesController" customModule="Notebook" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NotesController" id="lGh-bW-bCa" customClass="NotebookController" customModule="Notebook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="agN-iy-bzX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +38,7 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonTapped:" destination="lGh-bW-bCa" id="h50-4Z-Bs9"/>
+                                <segue destination="c5f-eM-AIo" kind="show" identifier="GoToNote" id="4aX-ee-tyG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -44,6 +46,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzE-pV-v3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="134"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="dtv-f5-bai">
+            <objects>
+                <viewController storyboardIdentifier="NoteViewController" id="c5f-eM-AIo" customClass="NoteViewController" customModule="Notebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfk-qk-jfl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uno-OO-QvV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uno-OO-QvV" firstAttribute="top" secondItem="zI7-Sb-OFO" secondAttribute="top" id="5od-Aa-oVR"/>
+                            <constraint firstItem="zI7-Sb-OFO" firstAttribute="trailing" secondItem="uno-OO-QvV" secondAttribute="trailing" id="Fwr-Jn-ygx"/>
+                            <constraint firstItem="zI7-Sb-OFO" firstAttribute="bottom" secondItem="uno-OO-QvV" secondAttribute="bottom" id="H9g-sz-oza"/>
+                            <constraint firstItem="uno-OO-QvV" firstAttribute="leading" secondItem="zI7-Sb-OFO" secondAttribute="leading" id="uOp-hj-y5A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zI7-Sb-OFO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="grZ-Vd-5g3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEV-Ws-OfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dkt-5u-OKX">
