@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Cn-BY-ekn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,7 +11,7 @@
         <!--Notes-->
         <scene sceneID="f13-om-nvc">
             <objects>
-                <tableViewController id="lGh-bW-bCa" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NotesController" id="lGh-bW-bCa" customClass="NotesController" customModule="Notebook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="agN-iy-bzX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,9 @@
                     <navigationItem key="navigationItem" title="Notes" id="qIg-6M-2Ky">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Psx-Hc-eb4">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="lGh-bW-bCa" id="h50-4Z-Bs9"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>

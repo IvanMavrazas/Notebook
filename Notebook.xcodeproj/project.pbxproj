@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BC44D39217336630018DA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC44D38217336630018DA43 /* AppDelegate.swift */; };
-		0BC44D3B217336630018DA43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC44D3A217336630018DA43 /* ViewController.swift */; };
+		0BC44D3B217336630018DA43 /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC44D3A217336630018DA43 /* NotesController.swift */; };
 		0BC44D3E217336630018DA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC44D3C217336630018DA43 /* Main.storyboard */; };
 		0BC44D41217336630018DA43 /* Notebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BC44D3F217336630018DA43 /* Notebook.xcdatamodeld */; };
 		0BC44D43217336670018DA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC44D42217336670018DA43 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		0BC44D35217336630018DA43 /* Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC44D38217336630018DA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BC44D3A217336630018DA43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BC44D3A217336630018DA43 /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
 		0BC44D3D217336630018DA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BC44D40217336630018DA43 /* Notebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notebook.xcdatamodel; sourceTree = "<group>"; };
 		0BC44D42217336670018DA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC44D38217336630018DA43 /* AppDelegate.swift */,
-				0BC44D3A217336630018DA43 /* ViewController.swift */,
+				0BC44D3A217336630018DA43 /* NotesController.swift */,
 				0BC44D3C217336630018DA43 /* Main.storyboard */,
 				0BC44D42217336670018DA43 /* Assets.xcassets */,
 				0BC44D44217336670018DA43 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC44D3B217336630018DA43 /* ViewController.swift in Sources */,
+				0BC44D3B217336630018DA43 /* NotesController.swift in Sources */,
 				0BC44D41217336630018DA43 /* Notebook.xcdatamodeld in Sources */,
 				0BC44D39217336630018DA43 /* AppDelegate.swift in Sources */,
 			);
