@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol NotebookDelegate {
+    func addNote(value: String )
+}
+
 class NoteViewController: UIViewController {
 
+    var delegate: NotebookDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

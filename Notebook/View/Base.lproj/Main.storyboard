@@ -45,7 +45,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzE-pV-v3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="134"/>
+            <point key="canvasLocation" x="1495" y="134"/>
         </scene>
         <!--Note View Controller-->
         <scene sceneID="dtv-f5-bai">
@@ -71,11 +71,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zI7-Sb-OFO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="grZ-Vd-5g3"/>
+                    <navigationItem key="navigationItem" id="grZ-Vd-5g3">
+                        <barButtonItem key="backBarButtonItem" title="Notes" id="duH-kM-oA9"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="0DX-az-RCE"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEV-Ws-OfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="134"/>
+            <point key="canvasLocation" x="2188" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dkt-5u-OKX">

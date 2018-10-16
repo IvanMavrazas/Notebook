@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class NotebookController: UITableViewController {
     
     var items = ["Learn Today", "Milena's 50th birthday"]
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +22,9 @@ class NotebookController: UITableViewController {
     //MARK - TableView Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let noteVC = mainStoryboard.instantiateViewController(withIdentifier: "NoteViewController") as! NoteViewController
+        self.navigationController?.pushViewController(noteVC, animated: true)
     }
     
     //MARK - TableView Datasource Methods
@@ -38,9 +42,26 @@ class NotebookController: UITableViewController {
         return cell
         
     }
+    
+    
 
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
         
     }
+    
+    func writeNote() {
+
+    }
 }
+
+extension NotebookController: NotebookDelegate {
+  
+    func addNote(value: String) {
+        items.append(value)
+        
+        }
+    
+    }
+    
+    
 
